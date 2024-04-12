@@ -14,10 +14,13 @@
 ### @{url}
 > 링크URL, URL형식 출력
 > th:href, th:src, th:action 과 함께 사용하여 표기함.
+> 
 > #### 단순 URL
 >> <a th:href="@{/board}"> </a>
+
 > #### 쿼리스트링 포함 URL
 >> <a th:href="@{/board(key=@${key}, query=${query} ) }"></a>
+
 > #### PathVariable 포함 URL
 >> <a th:href="@{/board/{boardCode}/{boardNo}(boardCode=${boardCode}, boardNo=${boardNo} ) }></a>
 > ###
